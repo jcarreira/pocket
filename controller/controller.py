@@ -213,7 +213,7 @@ def remove_job(jobid):
 
 @asyncio.coroutine
 def launch_dram_datanode(parallelism):
-  print("KUBERNETES: launch %d dram datanode........", parallelism)
+  print("KUBERNETES: launch %d dram datanode........".format(parallelism))
   global dram_launch_num
   kubernetes_job_name = "pocket-datanode-dram-job" + str(dram_launch_num)
   yaml_file = "../deploy/pocket-datanode-dram-job.yaml"

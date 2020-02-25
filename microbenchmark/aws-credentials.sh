@@ -1,4 +1,4 @@
-export AWS_ACCOUNT_NUMBER="xxxxxxxxxxxx"
-export IAM_ROLE_NAME="pocket-iam"
-export POCKET_VPC_PRIVATE_SUBNET_ID="subnet-xxxxxxxx"
-export POCKET_VPC_SECURITY_GROUP_ID="sg-xxxxxxxx"
+export AWS_ACCOUNT_NUMBER="301078572027"
+export IAM_ROLE_NAME="cirrus_terasort_policy"
+export POCKET_VPC_PRIVATE_SUBNET_ID="subnet-03a346c26853e1e05"
+export POCKET_VPC_SECURITY_GROUP_ID="sg-0f662f0c55cba3154"

@@ -1,7 +1,7 @@
 import boto3
 import botocore
 import argparse
-
+import random
 def invoke_lambda():
   client = boto3.client('lambda')
   payload = ""

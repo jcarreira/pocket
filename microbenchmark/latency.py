@@ -2,6 +2,7 @@ import os
 import time
 import pocket
 import subprocess
+import random
 
 def pocket_write(p, jobid, iter, src_filename):
     for i in range(iter):
@@ -44,9 +45,9 @@ def lambda_handler(event, context):
     # create a file of size (datasize) in bytes
     iter = 50000
     datasize = 1024 #bytes
-    jobid = "latency-test"
+    jobid = "latency-test_"+str(random.randint(0, 1000000))
     namenode_ip = "10.1.0.10"
-    
+    print(jobid) 
     file_tmp = '/tmp/file_tmp'
     with open(file_tmp, 'w') as f:
         text = 'a'*datasize
@@ -94,3 +95,5 @@ def lambda_handler(event, context):
     os.remove(file_tmp)
     return
 
+if __name__ == "__main__":
+    lambda_handler(1,1)
